@@ -1,7 +1,6 @@
-PORTNAME=		prometheus_varnish_exporter
+PORTNAME=		varnish_exporter
 PORTVERSION=		1.4
 CATEGORIES=		www
-PKGNAME=		varnish_exporter
 
 MAINTAINER=		ports@zx23.net
 COMMENT=		Prometheus metrics exporter for the Varnish WWW cache
@@ -9,8 +8,9 @@ COMMENT=		Prometheus metrics exporter for the Varnish WWW cache
 LICENSE=		APACHE20
 
 USES=			go
-GH_ACCOUNT=		jonnenauha
 USE_GITHUB=		yes
+GH_ACCOUNT=		jonnenauha
+GH_PROJECT=		prometheus_varnish_exporter
 GH_TUPLE=		prometheus:client_golang:v0.8.0:client_golang \
 			prometheus:client_model:6f38060:client_model \
 			prometheus:common:49fee29:common \
@@ -19,17 +19,16 @@ GH_TUPLE=		prometheus:client_golang:v0.8.0:client_golang \
 			matttproud:golang_protobuf_extensions:c12348c:golang_protobuf_extensions \
 			prometheus:procfs:a1dba9c:procfs
 
-GO_PKGNAME=		github.com/${GH_ACCOUNT}/${PORTNAME}
+GO_PKGNAME=		github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
-USE_RC_SUBR=		varnish_exporter
+USE_RC_SUBR=		${PORTNAME}
 
 USERS=			varnish
 GROUPS=			varnish
 
-PLIST_FILES=		bin/varnish_exporter
+PLIST_FILES=		bin/${PORTNAME}
 
 pre-build:
-	echo ${WRKSRC_client_golang}
 	${MKDIR} ${GO_WRKDIR_SRC}/github.com/beorn7
 	${MKDIR} ${GO_WRKDIR_SRC}/github.com/golang
 	${MKDIR} ${GO_WRKDIR_SRC}/github.com/matttproud
