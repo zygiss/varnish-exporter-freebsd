@@ -1,3 +1,6 @@
+# Created by: Žygis Škulteckis <ports@zx23.net>
+# $FreeBSD$
+
 PORTNAME=		varnish_exporter
 PORTVERSION=		1.4
 CATEGORIES=		www
@@ -9,6 +12,7 @@ LICENSE=		APACHE20
 
 USES=			go
 USE_GITHUB=		yes
+
 GH_ACCOUNT=		jonnenauha
 GH_PROJECT=		prometheus_varnish_exporter
 GH_TUPLE=		prometheus:client_golang:v0.8.0:client_golang \
