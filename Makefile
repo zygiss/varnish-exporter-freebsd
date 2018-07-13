@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=		varnish_exporter
-PORTVERSION=		1.4
+PORTVERSION=		1.4.1
 CATEGORIES=		www
 
 MAINTAINER=		ports@zx23.net

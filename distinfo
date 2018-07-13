@@ -1,6 +1,6 @@
-TIMESTAMP = 1531472991
-SHA256 (jonnenauha-prometheus_varnish_exporter-1.4_GH0.tar.gz) = ff36cdbc4aedbe3c41223588089a6110f1a91e2f7c29bae9ac81d782e0d7d047
-SIZE (jonnenauha-prometheus_varnish_exporter-1.4_GH0.tar.gz) = 193421
+TIMESTAMP = 1531473283
+SHA256 (jonnenauha-prometheus_varnish_exporter-1.4.1_GH0.tar.gz) = 20deb875de670a196b6638e5feacaf40dcb922255392f092c5b0790928652260
+SIZE (jonnenauha-prometheus_varnish_exporter-1.4.1_GH0.tar.gz) = 197319
 SHA256 (prometheus-client_golang-v0.8.0_GH0.tar.gz) = 88b0040393276116f848de5bdd636717d339667273cfc45a4edda40b5e5682bd
 SIZE (prometheus-client_golang-v0.8.0_GH0.tar.gz) = 75593
 SHA256 (beorn7-perks-3a771d9_GH0.tar.gz) = b7a0faebca98ebd5e7546403b4cdea9dc77f865f0623d04efbad33e984297cc9
