@@ -16,12 +16,12 @@ USE_GITHUB=		yes
 GH_ACCOUNT=		jonnenauha
 GH_PROJECT=		prometheus_varnish_exporter
 GH_TUPLE=		prometheus:client_golang:v0.8.0:client_golang \
-			beorn7:perks:3a771d99:perks \
-			golang:protobuf:bbd03ef6:protobuf \
-			matttproud:golang_protobuf_extensions:c12348ce:golang_protobuf_extensions \
-			prometheus:client_model:99fa1f4b:client_model \
-			prometheus:common:e4aa40a9:common \
-			prometheus:procfs:780932d4:procfs
+			beorn7:perks:3a771d9:perks \
+			golang:protobuf:70b3af3:protobuf \
+			matttproud:golang_protobuf_extensions:c12348c:golang_protobuf_extensions \
+			prometheus:client_model:5c3871d:client_model \
+			prometheus:common:7600349:common \
+			prometheus:procfs:ae68e2d:procfs
 
 GO_PKGNAME=		github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
